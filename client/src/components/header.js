@@ -23,47 +23,49 @@ export default class header extends React.Component {
    */
   render() {
     return (
-      <div className="navbar-fixed">
-        <nav className="nav-wrapper header-bg">
-          <div className="container">
-            <img
-              className="responsive-img"
-              src={logo}
-              width="230"
-              height="auto"
-              alt="Photonote app logo"
-            />
-            <a
-              href="#test"
-              className="sidenav-trigger right"
-              data-target="mobile-links"
-            >
-              <i className="material-icons turbo-text">menu</i>
-            </a>
-            <ul className="right hide-on-med-and-down">
-              <li className="active">
-                <a href="#test" className="turbo-text nav-text">
-                  How it works
-                </a>
-              </li>
-              <li>
-                <a href="#test" className="turbo-text nav-text">
-                  Features & Benefits
-                </a>
-              </li>
-              <li>
-                <a href="#test" className="turbo-text nav-text">
-                  Team
-                </a>
-              </li>
-              <li>
-                <a href="#test" className="turbo-text nav-text">
-                  My Photos
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <div>
+        <div className="navbar-fixed">
+          <nav className="nav-wrapper header-bg">
+            <div className="container">
+              <img
+                className="responsive-img"
+                src={logo}
+                width="230"
+                height="auto"
+                alt="Photonote app logo"
+              />
+              <a
+                href="#test"
+                className="sidenav-trigger right"
+                data-target="mobile-links"
+              >
+                <i className="material-icons turbo-text">menu</i>
+              </a>
+              <ul className="right hide-on-med-and-down">
+                <li className="active">
+                  <a href="#test" className="turbo-text nav-text">
+                    How it works
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" className="turbo-text nav-text">
+                    Features & Benefits
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" className="turbo-text nav-text">
+                    Team
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" className="turbo-text nav-text">
+                    My Photos
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
         <ul className="sidenav header-bg turbo-text nav-text" id="mobile-links">
           <li className="active">
             <a href="#test" className="yellow-text nav-text">
