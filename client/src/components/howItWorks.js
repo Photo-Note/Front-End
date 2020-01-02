@@ -12,15 +12,24 @@ export default class howItWorks extends React.Component {
           <div className="how-title">How It Works</div>
           <div className="box-section">
             <div class="box-attr box-left">
-              Drop. Flip. Write.
+              <div className="box-container">
+                <div className="box-title">Drop. Flip. Write.</div>
+                <p className="box-body">Remember doing things like this?</p>
+                <p className="box-body">Swipe down to create a short note!</p>
+                <p className="box-body">Swipe left to flip the photo and write more!</p>
+              </div>
             </div>
             <div className="box-attr box-right">
-              Save & Share
+              <div className="box-container">
+                <div class="box-title">Save & Share</div>
+                <p className="box-body">Save to your camera roll,</p>
+                <p className="box-body">share to your favorite social media app, email or </p>
+                <p className="box-body">text, and so much more!</p>
+              </div>
             </div>
           </div>
         </section>
       </div>
     );
-    // return <section className="container">How it works section</section>;
   }
 }

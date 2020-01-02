@@ -30,11 +30,38 @@ $whiteLinen: #faf9ef;
 }
 
 .box-section {
-  // position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.box-container {
+  align-items: center;
+  text-align: center;
 }
 
 .box-attr {
-  background: #FAF9EF;
-  border: 2px solid #D6D3BA;
+  background: $whiteLinen;
+  border: 2px solid $sisal;
+  height: 370px;
+  width: 420px;
+  box-shadow: 0px 26px 43px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
 }
 
+.box-left {
+  margin-right: 72px;
+}
+
+.box-title {
+  color: $blackPearl;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.box-body {
+  color: $deepSeaGreen;
+  line-height: 5px;
+  font-size: 10px;
+  font-weight: 500;
+}
