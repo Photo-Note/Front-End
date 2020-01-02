@@ -37,6 +37,21 @@ header {
 }
 
 .carousel {
-  min-height: 650px;
-  top: -120px;
+  height: 650px;
+  border: 1px solid white;
+  top: -100px;
+}
+
+.hero-right {
+  border: 1px solid white;
+  height: 550px;
+}
+
+.hero-right-content {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
 }
