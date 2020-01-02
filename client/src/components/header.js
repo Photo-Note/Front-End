@@ -29,7 +29,7 @@ export default class header extends React.Component {
             <img
               className="responsive-img"
               src={logo}
-              width="250"
+              width="230"
               height="auto"
               alt="Photonote app logo"
             />
