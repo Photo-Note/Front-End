@@ -1,5 +1,9 @@
 import React from "react";
 import "materialize-css/dist/css/materialize.min.css";
+import left1 from "../assets/boxleft-1.png";
+import left2 from "../assets/boxleft-2.png";
+import right1 from "../assets/boxright-1.png";
+import right2 from "../assets/boxright-2.png";
 
 /**
  * TO-DO - Developer comments
@@ -13,14 +17,46 @@ export default class howItWorks extends React.Component {
           <div className="box-section">
             <div class="box-attr box-left">
               <div className="box-container">
+                <div className="img-container">
+                  <img
+                    className="leftimg-one"
+                    src={left1}
+                    width="90"
+                    height="auto"
+                    alt="Box left image one"
+                  />
+                  <img
+                    className="leftimg-two"
+                    src={left2}
+                    width="90"
+                    height="auto"
+                    alt="Box left image two"
+                  />
+                </div>
                 <div className="box-title">Drop. Flip. Write.</div>
-                <p className="box-body">Remember doing things like this?</p>
+                <p className="box-body box-emp">Remember doing things like this?</p>
                 <p className="box-body">Swipe down to create a short note!</p>
                 <p className="box-body">Swipe left to flip the photo and write more!</p>
               </div>
             </div>
             <div className="box-attr box-right">
               <div className="box-container">
+                <div className="img-container">
+                  <img
+                    className="leftimg-one"
+                    src={right1}
+                    width="90"
+                    height="auto"
+                    alt="Box right image one"
+                  />
+                  <img
+                    className="leftimg-two"
+                    src={right2}
+                    width="90"
+                    height="auto"
+                    alt="Box right image two"
+                  />
+                </div>
                 <div class="box-title">Save & Share</div>
                 <p className="box-body">Save to your camera roll,</p>
                 <p className="box-body">share to your favorite social media app, email or </p>

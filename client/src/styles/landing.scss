@@ -27,6 +27,7 @@ $whiteLinen: #faf9ef;
   font-size: 36px;
   align-items: center;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .box-section {
@@ -50,6 +51,15 @@ $whiteLinen: #faf9ef;
 
 .box-left {
   margin-right: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .box-title {
@@ -63,5 +73,24 @@ $whiteLinen: #faf9ef;
   color: $deepSeaGreen;
   line-height: 5px;
   font-size: 10px;
-  font-weight: 500;
+}
+
+.box-emp {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.leftimg-one {
+  margin-right: 10px;
+}
+
+.leftimg-two {
+  margin-left: 10px;
 }
