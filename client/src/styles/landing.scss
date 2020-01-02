@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
 
 $white: #ffffff;
 $deepSeaGreen: hsl(204, 78%, 23%);
@@ -41,7 +41,7 @@ header {
 // FEATURES AND BENEFITS
 .card {
   background-color: $deepSeaGreen !important;
-  font-family: 'Rock Salt', sans-serif;
+  font-family: "Rock Salt", sans-serif;
   display: flex;
   align-items: center;
   padding: 5%;
@@ -52,8 +52,9 @@ h3 {
   color: $brightTurquoise;
 }
 h2 {
-  font-family: 'Rock Salt', sans-serif;
+  font-family: "Rock Salt", sans-serif;
   color: $deepSeaGreen;
+}
 
 .carousel {
   height: 650px;
@@ -107,4 +108,14 @@ h2 {
   color: $white;
   font-size: 1.5vw;
   border-bottom: 1px solid $white;
+}
+
+.profile-img {
+  width: 50%;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
