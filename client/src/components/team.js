@@ -17,7 +17,7 @@ export default class team extends React.Component {
   componentDidMount() {
     document.addEventListener("DOMContentLoaded", function() {
       var elems = document.querySelectorAll(".slider");
-      var instances = M.Slider.init(elems, {});
+      var instances = M.Slider.init(elems, { height: 500 });
     });
   }
   render() {
@@ -26,7 +26,7 @@ export default class team extends React.Component {
         <div>
           <h2>The team</h2>
         </div>
-        <div class="slider">
+        <div class="slider center-align slider-format">
           <ul class="slides">
             <li>
               <img src={Alex} className="responsive-img" />
