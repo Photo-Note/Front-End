@@ -27,3 +27,8 @@ section {
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
 }
+
+a {
+  cursor: pointer;
+  pointer-events: auto;
+}
