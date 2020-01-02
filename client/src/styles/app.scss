@@ -1,5 +1,12 @@
 //We will use variables for colors and fonts
-$main-background: #ffffff; // This needs to be changed to the correct color
+$white: #ffffff;
+$deepSeaGreen: #0d456a;
+$brightTurquoise: #00e6ec;
+$turbo: #f8ea01;
+$graniteGreen: #8f8d7d;
+$sisal: #d6d3ba;
+$blackPearl: #041622;
+$whiteLinen: #faf9ef;
 
 *,
 *::before,
@@ -10,8 +17,13 @@ html {
   width: 100vw;
   font-size: 62.5%;
   min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 section {
   min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
 }
