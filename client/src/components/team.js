@@ -17,7 +17,7 @@ export default class team extends React.Component {
   componentDidMount() {
     document.addEventListener("DOMContentLoaded", function() {
       var elems = document.querySelectorAll(".slider");
-      var instances = M.Slider.init(elems, { height: 500 });
+      var instances = M.Slider.init(elems, { height: 520 });
     });
   }
   render() {
