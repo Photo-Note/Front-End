@@ -24,16 +24,20 @@ $whiteLinen: #faf9ef;
 .nav-text {
   font-size: 1.4rem;
 }
+// FEATURES AND BENEFITS
 .card {
   background-color: $deepSeaGreen !important;
   font-family: 'Rock Salt', sans-serif;
   display: flex;
   align-items: center;
   padding: 5%;
+  margin-top: 10%;
 }
 h3 {
   padding-left: 10%;
+  color: $brightTurquoise;
 }
 h2 {
   font-family: 'Rock Salt', sans-serif;
+  color: $deepSeaGreen;
 }

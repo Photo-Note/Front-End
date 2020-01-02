@@ -28,7 +28,7 @@ export default class featuresBenefits extends React.Component {
       <div className="card">
         <img src={glueit1} alt="glue it 1" class="img-responsive"/>
         <img src={glueit2} alt="glue it 2" class="img-responsive"/>
-        <h3>Give it</h3>
+        <h3>Glue it</h3>
       </div>
       </div>
       {/* ROW 2 */}
