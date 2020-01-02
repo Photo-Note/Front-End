@@ -38,20 +38,54 @@ header {
 
 .carousel {
   height: 650px;
-  border: 1px solid white;
   top: -100px;
+}
+.row {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .hero-right {
-  border: 1px solid white;
   height: 550px;
 }
 
 .hero-right-content {
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
-  height: 200px;
+  height: 20vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero-section {
+  height: 77vh;
+  display: flex;
+}
+
+.hero-footer {
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+}
+
+.hero-left {
+  width: 75%;
+}
+.heroFooter-img {
+  width: 40%;
+}
+
+.hero-right-text {
+  color: $white;
+  font-size: 2vw;
+}
+
+.heroAppStore-img {
+  width: 80%;
+}
+
+.alink {
+  color: $white;
+  font-size: 1.5vw;
+  border-bottom: 1px solid $white;
 }
