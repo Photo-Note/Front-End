@@ -54,7 +54,7 @@ h3 {
 h2 {
   font-family: 'Rock Salt', sans-serif;
   color: $deepSeaGreen;
-
+}
 .carousel {
   height: 650px;
   top: -100px;
@@ -84,11 +84,21 @@ h2 {
 .comingsoon {
   background-color: $turbo;
   font-size: 2.4rem;
-  font-family: 'Rock Salt', sans-serif !important;
+  font-family: 'Rock Salt'!important;
   padding: 5%;
   display:flex;
   flex-flow: column;
   align-items: center;
+}
+#apptext {
+  font-size: 2.1rem;
+}
+
+// DIVIDERS
+.divider {
+background-color: $deepSeaGreen;
+width: 1441px;
+height: 96px;
 }
 
 .hero-footer {
@@ -120,4 +130,3 @@ h2 {
   border-bottom: 1px solid $white;
 }
 
-}

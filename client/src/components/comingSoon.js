@@ -10,8 +10,11 @@ import app from "../assets/appstore.png"
 export default class ComingSoon extends React.Component {
   render() {
     return (
+      <div>
+      {/* SECTION */}
     <section className="container center-align">
-      <ul class="comingsoon">
+      {/* UNORDERED LIST */}
+      <ul className="comingsoon">
         <li>Filter</li>
         <li>Frames</li>
         <li>Secret Messages</li>
@@ -19,10 +22,15 @@ export default class ComingSoon extends React.Component {
         <li>Scrapbooks/Photo Journals</li>
         <li>And MORE!</li>
       </ul>
-      <img src={app} alt="app icon" class="img-responsive"/>
-      <a>Text here</a>
+      {/* IMAGE */}
+      <img src={app} alt="app store" class="img-responsive"/>
+      <div class="row">
+        {/* TEXT */}
+      <a href="#" id="apptext">Get a Text!</a>
+      </div>
       </section>
-    
+      <div class="divider"></div>
+    </div>
     );
   }
 }
