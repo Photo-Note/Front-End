@@ -111,7 +111,7 @@ h2 {
 }
 
 .profile-img {
-  width: 50%;
+  filter: drop-shadow(16px 16px 20px red) invert(10%);
 }
 
 .img-responsive {
@@ -122,4 +122,11 @@ h2 {
 
 .slider {
   width: 40%;
+}
+
+.team-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }

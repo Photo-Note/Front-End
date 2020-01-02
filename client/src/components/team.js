@@ -22,35 +22,35 @@ export default class team extends React.Component {
   }
   render() {
     return (
-      <section className="container center-align">
+      <section className="container center-align team-section">
         <div>
           <h2>The team</h2>
         </div>
         <div class="slider center-align slider-format">
           <ul class="slides">
             <li>
-              <img src={Alex} className="responsive-img" />
+              <img src={Alex} className="responsive-img profile-img" />
             </li>
             <li>
-              <img src={Brandi} className="responsive-img" />
+              <img src={Brandi} className="responsive-img profile-img" />
             </li>
             <li>
-              <img src={Brian} className="responsive-img" />
+              <img src={Brian} className="responsive-img profile-img" />
             </li>
             <li>
-              <img src={Erica} className="responsive-img" />
+              <img src={Erica} className="responsive-img profile-img" />
             </li>
             <li>
-              <img src={Gayathri} className="responsive-img" />
+              <img src={Gayathri} className="responsive-img profile-img" />
             </li>
             <li>
-              <img src={Mary} className="responsive-img" />
+              <img src={Mary} className="responsive-img profile-img" />
             </li>
             <li>
-              <img src={Vickie} className="responsive-img" />
+              <img src={Vickie} className="responsive-img profile-img" />
             </li>
             <li>
-              <img src={Vicky} className="responsive-img" />
+              <img src={Vicky} className="responsive-img profile-img" />
             </li>
           </ul>
         </div>
