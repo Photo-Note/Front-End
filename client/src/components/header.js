@@ -53,7 +53,7 @@ export default class header extends React.Component {
                   </a>
                 </li>
                 <li>
-                  <a href="#test" className="turbo-text nav-text">
+                  <a href="#team-section" className="turbo-text nav-text">
                     Team
                   </a>
                 </li>
@@ -78,7 +78,7 @@ export default class header extends React.Component {
             </a>
           </li>
           <li>
-            <a href="#test" className="yellow-text nav-text">
+            <a href="#team-section" className="yellow-text nav-text">
               Team
             </a>
           </li>

@@ -17,12 +17,19 @@ export default class team extends React.Component {
   componentDidMount() {
     document.addEventListener("DOMContentLoaded", function() {
       var elems = document.querySelectorAll(".slider");
-      var instances = M.Slider.init(elems, { height: 520 });
+      var instances = M.Slider.init(elems, {
+        height: 520,
+        duration: 100,
+        interval: 1500
+      });
     });
   }
   render() {
     return (
-      <section className="container center-align team-section">
+      <section
+        className="container center-align team-section"
+        id="team-section"
+      >
         <div>
           <h2>The team</h2>
         </div>
