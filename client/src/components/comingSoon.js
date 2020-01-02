@@ -10,8 +10,7 @@ import app from "../assets/appstore.png"
 export default class ComingSoon extends React.Component {
   render() {
     return (
-      <div>
-      {/* SECTION */}
+      //SECTION
     <section className="container center-align">
       {/* UNORDERED LIST */}
       <ul className="comingsoon">
@@ -29,8 +28,6 @@ export default class ComingSoon extends React.Component {
       <a href="#" id="apptext">Get a Text!</a>
       </div>
       </section>
-      <div class="divider"></div>
-    </div>
     );
   }
 }

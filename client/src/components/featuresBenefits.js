@@ -14,8 +14,7 @@ import enjoyit from '../assets/enjoyit.png';
 export default class featuresBenefits extends React.Component {
   render() {
     return (
-      <div>
-      {/* FEATURES AND BENEFITS SECTION */}
+      // FEATURES AND BENEFITS SECTION
     <section className="container section center-align">
     <h2>Features & Benefits</h2>
     {/* ROW 1 */}
@@ -46,8 +45,6 @@ export default class featuresBenefits extends React.Component {
     </div>
     </div>
     </section>
-     <div class="divider"></div>
-     </div>
     );
   }
 }
