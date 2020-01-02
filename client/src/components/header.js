@@ -5,15 +5,22 @@ import "../styles/landing.scss";
 import logo from "../assets/photonote_logo.svg";
 
 /**
- * TO-DO - Developer comments
+ * This class is for the fixed headers.
  */
 export default class header extends React.Component {
+  /**
+   * Initializing the side bar on component did mount
+   */
   componentDidMount() {
     document.addEventListener("DOMContentLoaded", function() {
       var elems = document.querySelectorAll(".sidenav");
       var instances = M.Sidenav.init(elems, { edge: "right" });
     });
   }
+
+  /**
+   * Setting up the render for the header
+   */
   render() {
     return (
       <div className="navbar-fixed">
