@@ -44,4 +44,10 @@ h2 {
 // COMING SOON
 .comingsoon {
   background-color: $turbo;
+  font-size: 2.4rem;
+  font-family: 'Rock Salt', sans-serif;
+  padding: 5%;
+  display:flex;
+  flex-flow: column;
+  align-items: center;
 }

@@ -7,7 +7,7 @@ import InAction from "../components/inAction.js";
 import Team from "../components/team.js";
 import FeaturesBenefits from "../components/featuresBenefits.js";
 import Footer from "../components/footer.js";
-import comingSoon from "../components/comingSoon.js";
+import ComingSoon from "../components/comingSoon.js";
 
 /**
  * TO-DO - Developer comments
@@ -22,7 +22,7 @@ export default class Landing extends React.Component {
         <InAction />
         <FeaturesBenefits />
         <Team />
-        <comingSoon />
+        <ComingSoon />
         <Footer />
       </div>
     );
