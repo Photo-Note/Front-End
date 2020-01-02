@@ -1,0 +1,17 @@
+//We will use variables for colors and fonts
+$main-background: #ffffff; // This needs to be changed to the correct color
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  width: 100vw;
+  font-size: 62.5%;
+  min-height: 100vh;
+}
+
+section {
+  min-height: 100vh;
+}
