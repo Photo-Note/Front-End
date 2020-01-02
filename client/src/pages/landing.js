@@ -1,7 +1,6 @@
 import React from "react";
 import "materialize-css/dist/css/materialize.min.css";
 import Hero from "../components/hero.js";
-import Header from "../components/header.js";
 import HowItWorks from "../components/howItWorks.js";
 import InAction from "../components/inAction.js";
 import Team from "../components/team.js";
@@ -16,7 +15,6 @@ export default class Landing extends React.Component {
   render() {
     return (
       <div>
-        <Header />
         <Hero />
         <HowItWorks />
         <InAction />
