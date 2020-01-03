@@ -62,8 +62,6 @@ export default class hero extends React.Component {
             </div>
           </div>
         </div>
-
-        <div id="howitworks" />
       </header>
     );
   }

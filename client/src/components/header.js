@@ -85,7 +85,7 @@ export default class header extends React.Component {
             </a>
           </li>
           <li>
-            <a href="www.google.com" className="yellow-text nav-text">
+            <a href="/dashboard" className="yellow-text nav-text">
               My Photos
             </a>
           </li>
