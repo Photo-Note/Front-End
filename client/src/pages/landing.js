@@ -19,8 +19,8 @@ export default class Landing extends React.Component {
         <HowItWorks />
         <InAction />
         <FeaturesBenefits />
-        <Team />
         <ComingSoon />
+        <Team />
         <Footer />
       </div>
     );
