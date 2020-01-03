@@ -18,7 +18,6 @@ export default class footer extends React.Component {
       <div id="socialmedia">
       <img src={facebook}class="social" alt="facebook"/>
       <img src={twitter} class="social"alt="twitter"/>
-      <img src={instagram} class="social"alt="instagram"/>
       </div>
       </div>
       <div id="footerbottom">
@@ -28,14 +27,14 @@ export default class footer extends React.Component {
     <div className= "inputs">
       <div className="row">
         <div className="input-field col l10">
-          <input id="name" type="text" class="validate"/>
-          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="name"/>
+          
         </div>
         </div>
         <div className="row">
         <div className="input-field col l10">
-          <input id="email" type="email" class="validate"/>
-          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="email"/>
+          
        </div>
        <button className="btn waves-effect waves-light col l10" type="submit" name="action">Submit</button>
   </div>

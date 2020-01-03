@@ -21,11 +21,11 @@ export default class featuresBenefits extends React.Component {
     <div className="row">
       <div className="col s12 m7 l5 push-m2">
       {/* CARDS */}
-      <div className="card">
+      <div className="card card-update">
         <img src={flipit} alt="flip it" class="img-responsive phones"/>
         <h3>Flip It</h3>
       </div>
-      <div className="card">
+      <div className="card card-update">
         <img src={glueit1} alt="glue it 1" class="img-responsive phones"/>
         <img src={glueit2} alt="glue it 2" class="img-responsive phones"/>
         <h3>Glue it</h3>
@@ -33,12 +33,12 @@ export default class featuresBenefits extends React.Component {
       </div>
       {/* ROW 2 */}
       <div className="col s12 m7 l5 push-m2 offset-l1">
-      <div className="card">
+      <div className="card card-update">
         <img src={dropit1} alt="drop it 1" class="img-responsive phones"/>
         <img src={dropit2} alt=" drop it 2" class="img-responsive phones"/>
         <h3>Drop It</h3>
       </div>
-      <div className="card">
+      <div className="card card-update">
         <img src={enjoyit} alt="enjoy it" class="img-responsive phones"/>
         <h3>Enjoy It</h3>
       </div>
