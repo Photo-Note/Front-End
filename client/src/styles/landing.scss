@@ -192,49 +192,50 @@ h2 {
   background-color: $deepSeaGreen;
   width: 100%;
   height: 64px;
-  display:flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #footerbottom {
-background-color: $deepSeaGreen;
-height: 340px;
+  background-color: $deepSeaGreen;
+  height: 340px;
 }
 
 #logo {
-  width:230px;
-  height:auto;
+  width: 230px;
+  height: auto;
 }
 
 #socialmedia {
   display: flex;
 }
-#name, #email {
+#name,
+#email {
   background-color: #fff;
   font-size: 1.2rem;
 }
 
 .btn {
-width: 50.5%;
-height: 45px;
-background-color: $turbo;
-color: $blackPearl;
-font-weight: 600;
+  width: 50.5%;
+  height: 45px;
+  background-color: $turbo;
+  color: $blackPearl;
+  font-weight: 600;
 }
 .sub {
-  display:flex;
+  display: flex;
 }
 .inputs {
   display: flex;
   flex-flow: column;
-} 
+}
 .input-field {
   font-size: 1.8rem;
   color: $graniteGreen;
 }
 .subscribe {
   display: flex;
-font-size: 2.4rem;
+  font-size: 2.4rem;
   color: $brightTurquoise;
   text-align: center;
 }
@@ -255,5 +256,20 @@ font-size: 2.4rem;
 
 label {
   display: flex;
-  
+}
+
+//in-action section
+.inaction-section {
+  background: linear-gradient(
+      90.16deg,
+      #ffffff 0.08%,
+      rgba(255, 255, 255, 0.8) 54.91%,
+      rgba(255, 255, 255, 0.7) 98.48%
+    ),
+    url(../assets/action_bg.png) repeat fixed 100%;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
