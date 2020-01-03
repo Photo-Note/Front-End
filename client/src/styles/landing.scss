@@ -78,6 +78,7 @@ h2 {
 .hero-section {
   height: 77vh;
   display: flex;
+  flex-wrap: nowrap;
 }
 
 // COMING SOON
@@ -276,4 +277,15 @@ label {
 
 .phones {
   width: 100px;
+}
+
+@media (max-width: 575px) {
+  .hero-right {
+    display: none;
+  }
+
+  .hero-section {
+    justify-content: center;
+    align-items: center;
+  }
 }
