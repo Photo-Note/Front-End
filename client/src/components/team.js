@@ -32,6 +32,7 @@ export default class team extends React.Component {
       >
         <div>
           <h2>The team</h2>
+          <br />
         </div>
         <div class="slider center-align slider-format">
           <ul class="slides">

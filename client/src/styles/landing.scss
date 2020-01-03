@@ -81,6 +81,20 @@ h2 {
 }
 
 // COMING SOON
+.comingsoon-section {
+  background: linear-gradient(
+      90.16deg,
+      #ffffff 0.08%,
+      rgba(255, 255, 255, 0.9) 54.91%,
+      rgba(255, 255, 255, 0.7) 98.48%
+    ),
+    url(../assets/hero_bg.png) repeat fixed 100%;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .comingsoon {
   background-color: $turbo;
   font-size: 2.4rem;
@@ -89,6 +103,7 @@ h2 {
   display: flex;
   flex-flow: column;
   align-items: center;
+  margin-top: 10%;
 }
 #apptext {
   font-size: 2.1rem;
@@ -143,4 +158,8 @@ h2 {
   justify-content: flex-start;
   align-items: center;
   padding-top: 50px;
+}
+
+.gutter-top {
+  margin-top: 5%;
 }
