@@ -6,12 +6,11 @@ export const GET_PHOTONOTE = "GET_PHOTONOTE";
 export const getPhotoNote = photoNote => {
   return async (dispatch, getState, { getFirebase, getFirestore }) => {
     const firestore = getFirestore();
-    const querySnapShot = await firestore
-      .collection("pictures")
-      .where("is_glued", "==", false)
-      .get();
+    const querySnapShot = await firestore.get({ collection: "pictures" });
+
+    console.log(querySnapShot);
     querySnapShot.forEach(doc => {
-      console.log(doc.data());
+      console.log("--------------------------", doc.data());
       photoNote = { imageURL: doc.data().imageURL };
     });
     dispatch({ type: GET_PHOTONOTE, payload: photoNote });
