@@ -4,6 +4,8 @@ import Header from "../components/header.js";
 import { getPhotoNote } from "../actions/index.js";
 import { connect } from "react-redux";
 import Card from "../components/card.js";
+import Cards from "../components/cards.js";
+import "../styles/dashboard.scss";
 
 /**
  * TO-DO - Developer comments
@@ -22,6 +24,9 @@ class Dashboard extends React.Component {
       <div>
         <Header />
         {/* <Card imageVal={this.props.imageURL} /> */}
+        <div className="container cards-container">
+          <Cards cards={this.state.photoNotes} />
+        </div>
       </div>
     );
   }

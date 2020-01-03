@@ -1,3 +1,27 @@
 .border-img {
   padding: 10px;
 }
+
+.cards-container {
+  margin: 2% 5%;
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.cards-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 1%;
+}
+
+.card-align {
+  margin: 20px;
+  width: 350px;
+}
