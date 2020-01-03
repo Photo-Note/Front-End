@@ -1,5 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
+
+$white: #ffffff;
+$deepSeaGreen: hsl(204, 78%, 23%);
+$brightTurquoise: #00e6ec;
+$turbo: #f8ea01;
+$graniteGreen: #8f8d7d;
+$sisal: #d6d3ba;
+$blackPearl: #041622;
+$whiteLinen: #faf9ef;
+
 .border-img {
-  padding: 10px;
+  margin: 10px;
+  border: 1px solid $graniteGreen;
 }
 
 .cards-container {
@@ -24,4 +36,67 @@
 .card-align {
   margin: 20px;
   width: 350px;
+}
+
+.card-content-font {
+  font-family: "Rock Salt", sans-serif;
+}
+
+.tabs-container {
+  margin: 2% 5%;
+  width: 90%;
+  height: auto;
+  border-bottom: 1px solid $deepSeaGreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.tab {
+  margin: 0.5% 20px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: bolder;
+  cursor: pointer;
+
+  font-family: "Rock Salt", sans-serif;
+  width: 150px;
+}
+
+.active-tab {
+  background-color: $deepSeaGreen;
+  color: #eeeeee;
+}
+
+.cards-container {
+  margin: 2% 5%;
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 1%;
+}
+
+.card {
+  img {
+    width: fit-content !important;
+  }
 }

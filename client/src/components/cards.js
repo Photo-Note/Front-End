@@ -4,9 +4,9 @@ import "../styles/dashboard.scss";
 
 function Cards(props) {
   return (
-    <div className="cards-col">
-      {props.cards.map(card => (
-        <Card key={card.id} card={card} />
+    <div className="cards">
+      {props.cards.map((card, index) => (
+        <Card key={index} card={card} cardId={index} />
       ))}
     </div>
   );
