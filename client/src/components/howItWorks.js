@@ -25,7 +25,7 @@ export default class howItWorks extends React.Component {
             <img
               src={HowItWorksTwo}
               alt="how it works"
-              className="responsive-img howitworks-img"
+              className="responsive-img howitworks-img img-border"
             />
           </div>
         </div>
