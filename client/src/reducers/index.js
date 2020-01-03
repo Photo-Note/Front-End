@@ -7,10 +7,10 @@ const initialState = {};
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_PHOTONOTE:
-      console.log("------REDUCER-------" + action.payload.imageURL);
+      console.log("------REDUCER-------" + action.payload);
       return {
         ...state,
-        imageURL: action.payload.imageURL
+        photoNotes: action.payload.photoNotes
       };
     default:
       return state;
