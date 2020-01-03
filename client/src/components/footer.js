@@ -42,12 +42,12 @@ export default class footer extends React.Component {
   </div>
         </form>
       </div>
-      <div classname= "bottomnav row">
-      <div className="col l12">
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
+      <div className= "bottomnav row">
+      <div className="col s12 m12 l12 center-align">
+        <a href="#" class="bottom">About</a>
+        <a href="#" class="bottom">Contact</a>
+        <a href="#" class="bottom">Privacy</a>
+        <a href="#" class="bottom">Terms</a>
         </div>
         </div>
       </div>

@@ -172,8 +172,11 @@ height: 340px;
 }
 
 .btn {
-  width: 50.5%;
+width: 50.5%;
 height: 45px;
+background-color: $turbo;
+color: $blackPearl;
+font-weight: 600;
 }
 .sub {
   display:flex;
@@ -182,9 +185,27 @@ height: 45px;
   display: flex;
   flex-flow: column;
 } 
+.input-field {
+  font-size: 1.8rem;
+  color: $graniteGreen;
+}
 .subscribe {
   display: flex;
 font-size: 2.4rem;
   color: $brightTurquoise;
   text-align: center;
+}
+
+.bottom {
+  padding: 0 5%;
+  color: $brightTurquoise;
+  font-size: 1.6rem;
+}
+
+.bottomnav {
+  margin-top: 150px;
+}
+
+.social {
+  padding-right: 20%;
 }
