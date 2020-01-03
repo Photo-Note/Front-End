@@ -10,8 +10,7 @@ import Card from "../components/card.js";
  */
 class Dashboard extends React.Component {
   state = {
-    imageURL: "",
-    message: ""
+    photoNotes: []
   };
 
   componentDidMount() {
@@ -22,17 +21,20 @@ class Dashboard extends React.Component {
     return (
       <div>
         <Header />
-        <Card imageVal={this.props.imageURL} />
+        {/* <Card imageVal={this.props.imageURL} /> */}
       </div>
     );
   }
 }
 
 const mapStateToProps = state => {
-  console.log("++++++++++++++++++++", state.imageURL);
+  console.log("++++++++++++++++++++", state.photoNotes);
+  // return {
+  //   imageURL: state.imageURL,
+  //   message: state.message
+  // };
   return {
-    imageURL: state.imageURL,
-    message: state.message
+    photoNotes: state.photoNotes
   };
 };
 
