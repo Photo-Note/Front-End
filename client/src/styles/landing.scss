@@ -176,3 +176,19 @@ h2 {
 img-border {
   border: 2px solid $graniteGreen;
 }
+
+//in-action section
+.inaction-section {
+  background: linear-gradient(
+      90.16deg,
+      #ffffff 0.08%,
+      rgba(255, 255, 255, 0.9) 54.91%,
+      rgba(255, 255, 255, 0.7) 98.48%
+    ),
+    url(../assets/action_bg.png) repeat fixed 100%;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
