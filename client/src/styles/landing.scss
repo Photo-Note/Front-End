@@ -55,7 +55,6 @@ h2 {
   font-family: "Rock Salt", sans-serif;
   color: $deepSeaGreen;
 }
-
 .carousel {
   height: 650px;
   top: -100px;
@@ -79,6 +78,20 @@ h2 {
 .hero-section {
   height: 77vh;
   display: flex;
+}
+
+// COMING SOON
+.comingsoon {
+  background-color: $turbo;
+  font-size: 2.4rem;
+  font-family: "Rock Salt" !important;
+  padding: 5%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+#apptext {
+  font-size: 2.1rem;
 }
 
 .hero-footer {
