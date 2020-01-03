@@ -56,7 +56,9 @@ export default function Card(props) {
             <span className="card-title grey-text text-darken-4">
               <i className="material-icons right">close</i>
             </span>
-            <img src={props.card.gluedURL} />
+            <div className="front-image">
+              <img src={props.card.gluedURL} className="responsive-img" />
+            </div>
           </div>
         </div>
       )}
