@@ -3,28 +3,75 @@ import "materialize-css/dist/css/materialize.min.css";
 import "../styles/dashboard.scss";
 
 export default function Card(props) {
+  console.log(props.card.is_flipped, props.card.is_glued);
+  let polaroid = false;
+  let glued = false;
+  let flipped = false;
+  if (!props.card.is_glued && !props.card.is_flipped) {
+    polaroid = true;
+    glued = false;
+    flipped = false;
+  } else if (props.card.is_glued && props.card.is_flipped) {
+    glued = true;
+    polaroid = false;
+    flipped = false;
+  } else if (!props.card.is_glued && props.card.is_flipped) {
+    glued = false;
+    polaroid = false;
+    flipped = true;
+  }
+  console.log(
+    `polaroid is ${polaroid}, glued is ${glued}, flipped is ${flipped}`
+  );
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col s12 m7">
-          <div className="card">
-            <div className="card-image border-img">
-              <img src={props.imageVal} alt="memories" />
-              {/* <span className="card-title">Card Title</span> */}
-            </div>
-            <div className="card-content">
-              <p>
-                I am a very simple card. I am good at containing small bits of
-                information. I am convenient because I require little markup to
-                use effectively.
-              </p>
-            </div>
-            <div className="card-action">
-              <a href="#">This is a link</a>
-            </div>
+    <>
+      {polaroid && (
+        <div className="card small card-align">
+          <div className="card-image border-img">
+            <img src={props.card.imageURL} alt="memories" />
+          </div>
+
+          <div className="card-content card-content-font">
+            <p>{props.card.message}</p>
           </div>
         </div>
-      </div>
-    </div>
+      )}
+      {glued && (
+        <div className="card small card-align">
+          <div>
+            <img
+              src={props.card.imageURL}
+              alt="memories"
+              className="activator"
+            />
+          </div>
+
+          <div className="card-reveal">
+            <span className="card-title grey-text text-darken-4">
+              <i className="material-icons right">close</i>
+            </span>
+            <img src={props.card.gluedURL} />
+          </div>
+        </div>
+      )}
+      {flipped && (
+        <div className="card small card-align">
+          <div>
+            <img
+              src={props.card.imageURL}
+              alt="memories"
+              className="activator"
+            />
+          </div>
+
+          <div className="card-reveal">
+            <span className="card-title grey-text text-darken-4">
+              <i className="material-icons right">close</i>
+            </span>
+            <p className="card-content-font">{props.card.message}</p>
+          </div>
+        </div>
+      )}
+    </>
   );
 }

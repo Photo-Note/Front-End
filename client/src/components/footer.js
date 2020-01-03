@@ -5,7 +5,6 @@ import "materialize-css/dist/css/materialize.min.css";
 import logo from '../assets/photonote_logo.svg';
 import facebook from '../assets/facebook.svg';
 import twitter from '../assets/twitter.svg';
-import instagram from '../assets/instagram.svg';
 /**
  * TO-DO - Developer comments
  */
@@ -16,8 +15,8 @@ export default class footer extends React.Component {
       <div id="footertop">
       <img src={logo} id="logo" alt="logo"/>
       <div id="socialmedia">
-      <img src={facebook}class="social" alt="facebook"/>
-      <img src={twitter} class="social"alt="twitter"/>
+      <img src={facebook}class="social" alt="facebook"/> 
+      <img src={twitter} class="social"alt="twitter"/> 
       </div>
       </div>
       <div id="footerbottom">

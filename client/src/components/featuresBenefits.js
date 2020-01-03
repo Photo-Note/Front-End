@@ -2,12 +2,12 @@ import React from "react";
 import "materialize-css/dist/css/materialize.min.css";
 
 // IMPORTED IMAGES
-import flipit from '../assets/Features_Flip_Back_Text.png';
-import glueit1 from '../assets/Features_Drop_1.png';
-import glueit2 from '../assets/Features_Drop_2.png';
-import dropit1 from '../assets/Features_Gallery.png';
-import dropit2 from '../assets/Features_Flip_Front_Image.png';
-import enjoyit from '../assets/Features_Flip_Back_Image.png';
+import flipit from "../assets/flipit.png";
+import glueit1 from "../assets/glueit1.png";
+import glueit2 from "../assets/glueit2.png";
+import dropit1 from "../assets/dropit1.png";
+import dropit2 from "../assets/dropit2.png";
+import enjoyit from "../assets/enjoyit.png";
 /**
  * TO-DO - Developer comments
  */

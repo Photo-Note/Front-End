@@ -3,7 +3,7 @@
 export const DUMMY_ACTION = "DUMMY_ACTION";
 export const GET_PHOTONOTE = "GET_PHOTONOTE";
 
-export const getPhotoNote = photoNote => {
+export const getPhotoNote = photoNotes => {
   return async (dispatch, getState, { getFirebase, getFirestore }) => {
     const firestore = getFirestore();
     const querySnapShot = await firestore.get({ collection: "pictures" });
@@ -11,8 +11,9 @@ export const getPhotoNote = photoNote => {
     console.log(querySnapShot);
     querySnapShot.forEach(doc => {
       console.log("--------------------------", doc.data());
-      photoNote = { imageURL: doc.data().imageURL };
+      // photoNote = { imageURL: doc.data().imageURL };
+      photoNotes.photoNotes.push(doc.data());
     });
-    dispatch({ type: GET_PHOTONOTE, payload: photoNote });
+    dispatch({ type: GET_PHOTONOTE, payload: photoNotes });
   };
 };
