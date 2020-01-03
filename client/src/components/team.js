@@ -36,28 +36,60 @@ export default class team extends React.Component {
         <div class="slider center-align slider-format">
           <ul class="slides">
             <li>
-              <img src={Alex} className="responsive-img profile-img" />
+              <img
+                src={Alex}
+                className="responsive-img profile-img"
+                alt="Alex"
+              />
             </li>
             <li>
-              <img src={Brandi} className="responsive-img profile-img" />
+              <img
+                src={Brandi}
+                className="responsive-img profile-img"
+                alt="Brandi"
+              />
             </li>
             <li>
-              <img src={Brian} className="responsive-img profile-img" />
+              <img
+                src={Brian}
+                className="responsive-img profile-img"
+                alt="Brian"
+              />
             </li>
             <li>
-              <img src={Erica} className="responsive-img profile-img" />
+              <img
+                src={Erica}
+                className="responsive-img profile-img"
+                alt="Erica"
+              />
             </li>
             <li>
-              <img src={Gayathri} className="responsive-img profile-img" />
+              <img
+                src={Gayathri}
+                className="responsive-img profile-img"
+                alt="Gayathri"
+              />
             </li>
             <li>
-              <img src={Mary} className="responsive-img profile-img" />
+              <img
+                src={Mary}
+                className="responsive-img profile-img"
+                alt="Mary"
+              />
             </li>
             <li>
-              <img src={Vickie} className="responsive-img profile-img" />
+              <img
+                src={Vickie}
+                className="responsive-img profile-img"
+                alt="Vickie"
+              />
             </li>
             <li>
-              <img src={Vicky} className="responsive-img profile-img" />
+              <img
+                src={Vicky}
+                className="responsive-img profile-img"
+                alt="Vicky"
+              />
             </li>
           </ul>
         </div>
