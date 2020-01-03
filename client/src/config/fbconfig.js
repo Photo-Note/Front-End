@@ -1,17 +1,18 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
+require("dotenv").config();
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyC_qMxBLgwpL7yOBpBWqBMb8rPxDrzq7_o",
-  authDomain: "photonoteapp-39012.firebaseapp.com",
-  databaseURL: "https://photonoteapp-39012.firebaseio.com",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DB_URL,
   projectId: "photonoteapp-39012",
-  storageBucket: "photonoteapp-39012.appspot.com",
-  messagingSenderId: "420224563577",
-  appId: "1:420224563577:web:72e5da5a4ca2b911ee97a8",
-  measurementId: "G-DF0DKZ0J1J"
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
