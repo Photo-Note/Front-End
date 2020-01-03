@@ -24,6 +24,15 @@ export default class hero extends React.Component {
     return (
       <header>
         <HeaderSection />
+        <br />
+        <br />
+        <div className="container hero-footer">
+          <img
+            src={DFWImage}
+            alt=""
+            className="heroFooter-img responsive-img"
+          />
+        </div>
         <div className="container hero-section">
           <div className="carousel valign-wrapper hero-left">
             <a className="carousel-item" href="#one!">
@@ -53,14 +62,8 @@ export default class hero extends React.Component {
             </div>
           </div>
         </div>
-        <div className="container hero-footer">
-          <img
-            src={DFWImage}
-            alt=""
-            className="heroFooter-img responsive-img"
-          />
-          <div id="howitworks" />
-        </div>
+
+        <div id="howitworks" />
       </header>
     );
   }
