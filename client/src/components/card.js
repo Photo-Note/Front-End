@@ -26,19 +26,25 @@ export default function Card(props) {
   return (
     <>
       {polaroid && (
-        <div className="card small card-align">
+        <div className="card medium card-align">
           <div className="card-image border-img">
-            <img src={props.card.imageURL} alt="memories" />
+            <img
+              src={props.card.imageURL}
+              alt="memories"
+              className="responsive-img"
+            />
           </div>
 
           <div className="card-content card-content-font">
-            <p>{props.card.message}</p>
+            <p className="center-align">{props.card.message}</p>
+            <br />
+            <br />
           </div>
         </div>
       )}
       {glued && (
-        <div className="card small card-align">
-          <div>
+        <div className="card medium card-align">
+          <div className="card-image">
             <img
               src={props.card.imageURL}
               alt="memories"
@@ -55,12 +61,12 @@ export default function Card(props) {
         </div>
       )}
       {flipped && (
-        <div className="card small card-align">
-          <div>
+        <div className="card medium card-align">
+          <div className="front-image">
             <img
               src={props.card.imageURL}
               alt="memories"
-              className="activator"
+              className="activator responsive-img"
             />
           </div>
 
@@ -68,7 +74,11 @@ export default function Card(props) {
             <span className="card-title grey-text text-darken-4">
               <i className="material-icons right">close</i>
             </span>
-            <p className="card-content-font">{props.card.message}</p>
+            <div className="back-content">
+              <p className="card-content-font valign-wrapper">
+                {props.card.message}
+              </p>
+            </div>
           </div>
         </div>
       )}

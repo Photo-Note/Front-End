@@ -40,6 +40,10 @@ $whiteLinen: #faf9ef;
 
 .card-content-font {
   font-family: "Rock Salt", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  line-height: 25px;
 }
 
 .tabs-container {
@@ -95,8 +99,29 @@ $whiteLinen: #faf9ef;
   padding-bottom: 1%;
 }
 
-.card {
-  img {
-    width: fit-content !important;
-  }
+// .card {
+//   img {
+//     width: fit-content !important;
+//   }
+// }
+
+.card-image img {
+  max-width: 100%;
+}
+
+.card-image {
+  border: 1px solid green;
+  max-height: 80% !important;
+}
+
+.card .front-image {
+  max-height: 100%;
+}
+
+.back-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
