@@ -22,11 +22,34 @@ export default class footer extends React.Component {
       </div>
       </div>
       <div id="footerbottom">
-        <form class="center-align">
-          <input type="text" name="name"></input>
-          <input type="email" name="email"></input>
-          <button class="btn"></button>
+        <div className="row">
+    <form className="col sub s12 l7">
+    <h5 className="subscribe col l4">Subscribe and See What's Happening at PhotoNote</h5>
+    <div className= "inputs">
+      <div className="row">
+        <div className="input-field col l10">
+          <input id="name" type="text" class="validate"/>
+          <label for="name">Name</label>
+        </div>
+        </div>
+        <div className="row">
+        <div className="input-field col l10">
+          <input id="email" type="email" class="validate"/>
+          <label for="email">Email</label>
+       </div>
+       <button className="btn waves-effect waves-light col l10" type="submit" name="action">Submit</button>
+  </div>
+  </div>
         </form>
+      </div>
+      <div classname= "bottomnav row">
+      <div className="col l12">
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        </div>
+        </div>
       </div>
       </div>
     );

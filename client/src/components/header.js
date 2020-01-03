@@ -26,14 +26,16 @@ export default class header extends React.Component {
       <div>
         <div className="navbar-fixed">
           <nav className="nav-wrapper header-bg">
-            <div className="container">
-              <img
-                className="responsive-img"
-                src={logo}
-                width="230"
-                height="auto"
-                alt="Photonote app logo"
-              />
+            <div className="container" id="hero-section">
+              <a href="/">
+                <img
+                  className="responsive-img"
+                  src={logo}
+                  width="230"
+                  height="auto"
+                  alt="Photonote app logo"
+                />
+              </a>
               <a
                 href="#test"
                 className="sidenav-trigger right"
@@ -42,7 +44,7 @@ export default class header extends React.Component {
                 <i className="material-icons turbo-text">menu</i>
               </a>
               <ul className="right hide-on-med-and-down">
-                <li className="active">
+                <li>
                   <a href="#test" className="turbo-text nav-text">
                     How it works
                   </a>
@@ -53,12 +55,12 @@ export default class header extends React.Component {
                   </a>
                 </li>
                 <li>
-                  <a href="#test" className="turbo-text nav-text">
+                  <a href="#team-section" className="turbo-text nav-text">
                     Team
                   </a>
                 </li>
                 <li>
-                  <a href="#test" className="turbo-text nav-text">
+                  <a href="/dashboard" className="turbo-text nav-text">
                     My Photos
                   </a>
                 </li>
@@ -67,7 +69,7 @@ export default class header extends React.Component {
           </nav>
         </div>
         <ul className="sidenav header-bg turbo-text nav-text" id="mobile-links">
-          <li className="active">
+          <li>
             <a href="#test" className="yellow-text nav-text">
               How it works
             </a>
@@ -78,7 +80,7 @@ export default class header extends React.Component {
             </a>
           </li>
           <li>
-            <a href="#test" className="yellow-text nav-text">
+            <a href="#team-section" className="yellow-text nav-text">
               Team
             </a>
           </li>

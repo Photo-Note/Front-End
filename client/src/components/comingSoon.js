@@ -2,7 +2,7 @@ import React from "react";
 import "materialize-css/dist/css/materialize.min.css";
 
 // IMPORTED IMAGES
-import app from "../assets/appstore.png"
+import app from "../assets/appstore.png";
 
 /**
  * TO-DO - Developer comments

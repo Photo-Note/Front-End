@@ -86,19 +86,33 @@ width: 30%;
 }
 
 // COMING SOON
+.comingsoon-section {
+  background: linear-gradient(
+      90.16deg,
+      #ffffff 0.08%,
+      rgba(255, 255, 255, 0.9) 54.91%,
+      rgba(255, 255, 255, 0.7) 98.48%
+    ),
+    url(../assets/hero_bg.png) repeat fixed 100%;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .comingsoon {
   background-color: $turbo;
   font-size: 2.4rem;
-  font-family: 'Rock Salt'!important;
+  font-family: "Rock Salt" !important;
   padding: 5%;
-  display:flex;
+  display: flex;
   flex-flow: column;
   align-items: center;
+  margin-top: 10%;
 }
 #apptext {
   font-size: 2.1rem;
 }
-
 
 .hero-footer {
   display: flex;
@@ -152,12 +166,25 @@ height: 340px;
 #socialmedia {
   display: flex;
 }
-.social {
-  
+#name, #email {
+  background-color: #fff;
+  font-size: 1.2rem;
 }
 
-form {
-  width: 30%;
-  margin: 0 40%;
-  
+.btn {
+  width: 50.5%;
+height: 45px;
+}
+.sub {
+  display:flex;
+}
+.inputs {
+  display: flex;
+  flex-flow: column;
+} 
+.subscribe {
+  display: flex;
+font-size: 2.4rem;
+  color: $brightTurquoise;
+  text-align: center;
 }
