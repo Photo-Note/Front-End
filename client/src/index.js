@@ -12,7 +12,7 @@ import {
   getFirestore
 } from "redux-firestore";
 import { ReactReduxFirebaseProvider, getFireBase } from "react-redux-firebase";
-import fbConfig from "./config/fbConfig.js";
+import fbConfig from "../src/config/fbConfig.js";
 import firebase from "firebase/app";
 
 const store = createStore(
