@@ -94,6 +94,8 @@ export default class team extends React.Component {
             </li>
           </ul>
         </div>
+        <br/>
+        <br/>
       </section>
     );
   }
