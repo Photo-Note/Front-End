@@ -15,6 +15,7 @@ class Dashboard extends React.Component {
   };
 
   componentDidMount() {
+    console.log("IN CDM");
     this.props.getPhotoNote(this.state);
   }
   render() {
