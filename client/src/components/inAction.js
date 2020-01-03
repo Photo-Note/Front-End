@@ -24,7 +24,6 @@ export default class inAction extends React.Component {
               </div>
             </div>
           </div>
-          <div id="featuresbenefits" />
         </section>
       </div>
     );

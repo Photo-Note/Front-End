@@ -10,6 +10,11 @@ export default class howItWorks extends React.Component {
   render() {
     return (
       <section className="container">
+        <div id="howitworks" />
+        <br />
+        <br />
+        <br />
+        <br />
         <h2 className="center-align">How it works</h2>
         <br />
         <br />
