@@ -59,6 +59,7 @@ export default class hero extends React.Component {
             alt=""
             className="heroFooter-img responsive-img"
           />
+          <div id="howitworks" />
         </div>
       </header>
     );

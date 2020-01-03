@@ -45,12 +45,12 @@ export default class header extends React.Component {
               </a>
               <ul className="right hide-on-med-and-down">
                 <li>
-                  <a href="#test" className="turbo-text nav-text">
+                  <a href="#howitworks" className="turbo-text nav-text">
                     How it works
                   </a>
                 </li>
                 <li>
-                  <a href="#test" className="turbo-text nav-text">
+                  <a href="#featuresbenefits" className="turbo-text nav-text">
                     Features & Benefits
                   </a>
                 </li>
@@ -70,12 +70,12 @@ export default class header extends React.Component {
         </div>
         <ul className="sidenav header-bg turbo-text nav-text" id="mobile-links">
           <li>
-            <a href="#test" className="yellow-text nav-text">
+            <a href="#howitworks" className="yellow-text nav-text">
               How it works
             </a>
           </li>
           <li>
-            <a href="#test" className="yellow-text nav-text">
+            <a href="#featuresbenefits" className="yellow-text nav-text">
               Features and Benefits
             </a>
           </li>
