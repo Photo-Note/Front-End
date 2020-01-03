@@ -12,6 +12,7 @@ function App() {
     <Router>
       <Route path="/dashboard" component={Dashboard} />
       <Route exact path="/" component={Landing} />
+      <Route path="/landing" component={Landing} />
     </Router>
   );
 }

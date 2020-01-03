@@ -26,7 +26,7 @@ export default class header extends React.Component {
       <div>
         <div className="navbar-fixed">
           <nav className="nav-wrapper header-bg">
-            <div className="container">
+            <div className="container" id="hero-section">
               <a href="/">
                 <img
                   className="responsive-img"
@@ -60,7 +60,7 @@ export default class header extends React.Component {
                   </a>
                 </li>
                 <li>
-                  <a href="#test" className="turbo-text nav-text">
+                  <a href="/dashboard" className="turbo-text nav-text">
                     My Photos
                   </a>
                 </li>
