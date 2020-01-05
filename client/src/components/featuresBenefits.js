@@ -40,12 +40,12 @@ export default class featuresBenefits extends React.Component {
               <img
                 src={FeaturesFlipBackImage}
                 alt="flip it"
-                class="responsive-img phones materialboxed"
+                className="responsive-img phones materialboxed"
               />
               <img
                 src={FeaturesFlipBackText}
                 alt="flip it"
-                class="responsive-img phones materialboxed"
+                className="responsive-img phones materialboxed"
               />
               <h3>Flip It</h3>
             </div>
@@ -53,12 +53,12 @@ export default class featuresBenefits extends React.Component {
               <img
                 src={FeaturesFlipFrontImage}
                 alt="glue it 1"
-                class="responsive-img phones materialboxed"
+                className="responsive-img phones materialboxed"
               />
               <img
                 src={FeaturesFlipTextFront}
                 alt="glue it 2"
-                class="responsive-img phones materialboxed"
+                className="responsive-img phones materialboxed"
               />
               <h3>Glue it</h3>
             </div>
@@ -70,13 +70,13 @@ export default class featuresBenefits extends React.Component {
                 <img
                   src={FeaturesDrop1}
                   alt="drop it 1"
-                  class="responsive-img phones materialboxed"
+                  className="responsive-img phones materialboxed"
                 />
               </div>
               <img
                 src={FeaturesDrop2}
                 alt=" drop it 2"
-                class="responsive-img phones materialboxed"
+                className="responsive-img phones materialboxed"
               />
               <h3>Drop It</h3>
             </div>
@@ -84,7 +84,7 @@ export default class featuresBenefits extends React.Component {
               <img
                 src={FeaturesGallery}
                 alt="enjoy it"
-                class="responsive-img phones materialboxed"
+                className="responsive-img phones materialboxed"
               />
               <h3>Enjoy It</h3>
             </div>
