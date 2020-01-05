@@ -23,6 +23,27 @@ class Dashboard extends React.Component {
     console.log("IN CDM");
     this.props.getPhotoNote(this.state);
   }
+
+  selectTabHandler = tab => {
+    console.log("------SELECTED TAB HANDLER-------");
+    this.setState(prevState => {
+      const filteredPhotoNotes = prevState.photoNotes.filter(photoNote => {
+        //return card.tab === tab;
+        return photoNote.tab.includes(tab);
+      });
+      if (!(filteredPhotoNotes.length === 0)) {
+        return {
+          selected: tab,
+          filteredPhotoNotes
+        };
+      } else {
+        return {
+          selected: tab,
+          filteredPhotoNotes: this.state.photoNotes
+        };
+      }
+    });
+  };
   render() {
     return (
       <div>
@@ -35,7 +56,7 @@ class Dashboard extends React.Component {
           />
         </div>
         <div className="container cards-container">
-          <Cards cards={this.state.photoNotes} />
+          <Cards cards={this.state.filteredPhotoNotes} />
         </div>
       </div>
     );
