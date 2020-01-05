@@ -288,4 +288,16 @@ label {
     justify-content: center;
     align-items: center;
   }
+
+  .inaction-section {
+    section {
+      min-height: 60vh;
+    }
+  }
+
+  .comingsoon-section {
+    section {
+      min-height: 60vh;
+    }
+  }
 }

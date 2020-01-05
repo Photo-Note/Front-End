@@ -24,8 +24,8 @@ export default class ComingSoon extends React.Component {
             <li>And MORE!</li>
           </ul>
           {/* IMAGE */}
-          <img src={app} alt="app store" class="img-responsive" />
-          <div class="row">
+          <img src={app} alt="app store" className="img-responsive" />
+          <div className="row">
             {/* TEXT */}
             <a href="#" id="apptext">
               Get a Text!

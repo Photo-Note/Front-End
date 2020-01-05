@@ -34,8 +34,8 @@ export default class team extends React.Component {
           <h2>The team</h2>
           <br />
         </div>
-        <div class="slider center-align slider-format">
-          <ul class="slides">
+        <div className="slider center-align slider-format">
+          <ul className="slides">
             <li>
               <img
                 src={Alex}
@@ -94,8 +94,8 @@ export default class team extends React.Component {
             </li>
           </ul>
         </div>
-        <br/>
-        <br/>
+        <br />
+        <br />
       </section>
     );
   }

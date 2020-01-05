@@ -14,12 +14,12 @@ export default class inAction extends React.Component {
           <br />
           <div className="row">
             <div className="col s12 m12 l10 center-align offset-l1">
-              <div class="video-container">
+              <div className="video-container">
                 <iframe
                   width="350"
                   height="200"
                   src="https://www.youtube.com/embed/vPQyPcHlfgY?rel=0"
-                  frameborder="0"
+                  frameBorder="0"
                 ></iframe>
               </div>
             </div>
