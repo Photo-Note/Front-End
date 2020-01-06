@@ -223,12 +223,27 @@ h2 {
 }
 
 .btn-submit {
-  width: 50.5%;
-  height: 45px;
+  height: 35px;
   background-color: $turbo;
   color: $blackPearl;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.6rem;
+  cursor: pointer;
+}
+.btn-submit:hover {
+  color: $deepSeaGreen;
+}
+
+.btn-submit:focus {
+  outline: none;
+}
+
+.error {
+  color: $turbo;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-transform: initial;
+  margin-left: 1%;
 }
 .sub {
   display: flex;
@@ -244,6 +259,9 @@ h2 {
   font-size: 1.8rem;
   color: $graniteGreen;
   width: 300px;
+}
+.input-element::placeholder {
+  color: $graniteGreen;
 }
 .subscribe {
   display: flex;
