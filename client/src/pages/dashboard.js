@@ -12,12 +12,16 @@ import Tabs from "../components/tabs.js";
  * TO-DO - Developer comments
  */
 class Dashboard extends React.Component {
-  state = {
-    selected: "All",
-    tabs: ["All", "My Drops", "My Flips", "My Glues"],
-    photoNotes: [],
-    filteredPhotoNotes: []
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      selected: "All",
+      tabs: ["All", "My Drops", "My Flips", "My Glues"],
+      photoNotes: [],
+      filteredPhotoNotes: [],
+      isDashboard: true
+    };
+  }
 
   async componentDidMount() {
     await this.props.getPhotoNote(this.state);
@@ -53,7 +57,7 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header isDashboard={this.state.isDashboard} />
         <div className="tabs-container">
           <Tabs
             tabs={this.state.tabs}
