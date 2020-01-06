@@ -3,10 +3,6 @@ import "../styles/dashboard.scss";
 
 function Tab(props) {
   let classNameValue = "tab";
-  console.log(
-    "----------------SELECTED TAB IS " + props.selectedTab,
-    props.tab
-  );
   if (props.tab === props.selectedTab) {
     classNameValue = "tab active-tab";
   }

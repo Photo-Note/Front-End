@@ -10,7 +10,7 @@ export const getPhotoNote = photoNotes => {
 
     console.log(querySnapShot);
     querySnapShot.forEach(doc => {
-      console.log("--------------------------", doc.data());
+      console.log("----------GET PHOTO NOTE----------------", doc.data());
       // photoNote = { imageURL: doc.data().imageURL };
       photoNotes.photoNotes.push(doc.data());
     });

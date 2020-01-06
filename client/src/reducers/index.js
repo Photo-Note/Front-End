@@ -10,7 +10,8 @@ const reducer = (state = initialState, action) => {
       console.log("------REDUCER-------" + action.payload);
       return {
         ...state,
-        photoNotes: action.payload.photoNotes
+        photoNotes: action.payload.photoNotes,
+        filteredPhotoNotes: action.payload.photoNotes
       };
     default:
       return state;
