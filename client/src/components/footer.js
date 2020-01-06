@@ -9,11 +9,11 @@ import twitter from "../assets/twitter.svg";
  * TO-DO - Developer comments
  */
 
-const encode = data => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-};
+// const encode = data => {
+//   return Object.keys(data)
+//     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+//     .join("&");
+// };
 export default class footer extends React.Component {
   state = {
     isNameError: false,
@@ -59,14 +59,14 @@ export default class footer extends React.Component {
     });
     if (!isNameError && !isEmailError) {
       let form = document.getElementById("form-contact");
-      // form.submit();
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...this.state })
-      })
-        .then(() => alert("Success!"))
-        .catch(error => alert(error));
+      form.submit();
+      //   fetch("/", {
+      //     method: "POST",
+      //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      //     body: encode({ "form-name": "contact", ...this.state })
+      //   })
+      //     .then(() => alert("Success!"))
+      //     .catch(error => alert(error));
     }
   };
 
