@@ -12,10 +12,13 @@ import ComingSoon from "../components/comingSoon.js";
  * TO-DO - Developer comments
  */
 export default class Landing extends React.Component {
+  state = {
+    isDashboard: false
+  };
   render() {
     return (
       <div>
-        <Hero />
+        <Hero isDashboard={this.state.isDashboard} />
         <HowItWorks />
         <InAction />
         <FeaturesBenefits />

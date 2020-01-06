@@ -7,7 +7,6 @@ const initialState = {};
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_PHOTONOTE:
-      console.log("------REDUCER-------" + action.payload);
       return {
         ...state,
         photoNotes: action.payload.photoNotes,

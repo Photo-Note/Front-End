@@ -189,6 +189,11 @@ h2 {
 }
 
 //FOOTER
+
+.footer {
+  min-height: 400px;
+  color: $deepSeaGreen;
+}
 #footertop {
   background-color: $deepSeaGreen;
   width: 100%;
@@ -199,7 +204,8 @@ h2 {
 
 #footerbottom {
   background-color: $deepSeaGreen;
-  height: 340px;
+  height: 400px;
+  padding-top: 50px;
 }
 
 #logo {
@@ -216,22 +222,45 @@ h2 {
   font-size: 1.2rem;
 }
 
-.btn {
-  width: 50.5%;
-  height: 45px;
+.btn-submit {
+  height: 35px;
   background-color: $turbo;
   color: $blackPearl;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.btn-submit:hover {
+  color: $deepSeaGreen;
+}
+
+.btn-submit:focus {
+  outline: none;
+}
+
+.error {
+  color: $turbo;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-transform: initial;
+  margin-left: 1%;
 }
 .sub {
   display: flex;
 }
 .inputs {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
 }
 .input-field {
   font-size: 1.8rem;
+  color: $graniteGreen;
+  width: 300px;
+}
+.input-element::placeholder {
   color: $graniteGreen;
 }
 .subscribe {
@@ -240,7 +269,11 @@ h2 {
   color: $brightTurquoise;
   text-align: center;
 }
-
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .bottom {
   padding: 0% 5%;
   color: $brightTurquoise;
@@ -248,7 +281,7 @@ h2 {
 }
 
 .bottomnav {
-  margin-top: 80px;
+  padding-bottom: 2vh;
 }
 
 .social {
@@ -279,6 +312,12 @@ label {
   width: 100px;
 }
 
+.footer-sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 575px) {
   .hero-right {
     display: none;
@@ -299,5 +338,10 @@ label {
     section {
       min-height: 60vh;
     }
+  }
+
+  .footer-sections {
+    display: flex;
+    flex-direction: column;
   }
 }

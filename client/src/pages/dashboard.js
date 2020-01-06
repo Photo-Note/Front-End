@@ -12,22 +12,21 @@ import Tabs from "../components/tabs.js";
  * TO-DO - Developer comments
  */
 class Dashboard extends React.Component {
-  state = {
-    selected: "All",
-    tabs: ["All", "My Drops", "My Flips", "My Glues"],
-    photoNotes: [],
-    filteredPhotoNotes: []
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      selected: "All",
+      tabs: ["All", "My Drops", "My Flips", "My Glues"],
+      photoNotes: [],
+      filteredPhotoNotes: [],
+      isDashboard: true
+    };
+  }
 
   async componentDidMount() {
     await this.props.getPhotoNote(this.state);
-    console.log(
-      "-------------RENDER FUNCTION IN CMD" + this.state.filteredPhotoNotes
-    );
-    console.log("-------------RENDER FUNCTION IN CMD" + this.state.photoNotes);
   }
   componentDidUpdate(prevProps) {
-    console.log("--------------------prev", prevProps);
     if (this.props.photoNotes !== prevProps.photoNotes) {
       this.setState({
         ...this.state,
@@ -56,11 +55,9 @@ class Dashboard extends React.Component {
     });
   };
   render() {
-    console.log("-------------RENDER FUNCTION" + this.props.filteredPhotoNotes);
-    console.log("-------------RENDER FUNCTION" + this.props.photoNotes);
     return (
       <div>
-        <Header />
+        <Header isDashboard={this.state.isDashboard} />
         <div className="tabs-container">
           <Tabs
             tabs={this.state.tabs}
@@ -77,12 +74,6 @@ class Dashboard extends React.Component {
 }
 
 const mapStateToProps = state => {
-  console.log("++++++++++++++++++++", state.photoNotes);
-  console.log("++++++++++++++++++++", state.filteredPhotoNotes);
-  // return {
-  //   imageURL: state.imageURL,
-  //   message: state.message
-  // };
   return {
     ...state,
     photoNotes: state.photoNotes,

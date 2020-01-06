@@ -44,21 +44,28 @@ export default class header extends React.Component {
                 <i className="material-icons turbo-text">menu</i>
               </a>
               <ul className="right hide-on-med-and-down">
-                <li>
-                  <a href="#howitworks" className="turbo-text nav-text">
-                    How it works
-                  </a>
-                </li>
-                <li>
-                  <a href="#featuresbenefits" className="turbo-text nav-text">
-                    Features & Benefits
-                  </a>
-                </li>
-                <li>
-                  <a href="#team-section" className="turbo-text nav-text">
-                    Team
-                  </a>
-                </li>
+                {!this.props.isDashboard && (
+                  <>
+                    <li>
+                      <a href="#howitworks" className="turbo-text nav-text">
+                        How it works
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#featuresbenefits"
+                        className="turbo-text nav-text"
+                      >
+                        Features & Benefits
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#team-section" className="turbo-text nav-text">
+                        Team
+                      </a>
+                    </li>
+                  </>
+                )}
                 <li>
                   <a href="/dashboard" className="turbo-text nav-text">
                     My Photos
@@ -69,21 +76,25 @@ export default class header extends React.Component {
           </nav>
         </div>
         <ul className="sidenav header-bg turbo-text nav-text" id="mobile-links">
-          <li>
-            <a href="#howitworks" className="yellow-text nav-text">
-              How it works
-            </a>
-          </li>
-          <li>
-            <a href="#featuresbenefits" className="yellow-text nav-text">
-              Features and Benefits
-            </a>
-          </li>
-          <li>
-            <a href="#team-section" className="yellow-text nav-text">
-              Team
-            </a>
-          </li>
+          {!this.props.isDashboard && (
+            <>
+              <li>
+                <a href="#howitworks" className="yellow-text nav-text">
+                  How it works
+                </a>
+              </li>
+              <li>
+                <a href="#featuresbenefits" className="yellow-text nav-text">
+                  Features and Benefits
+                </a>
+              </li>
+              <li>
+                <a href="#team-section" className="yellow-text nav-text">
+                  Team
+                </a>
+              </li>
+            </>
+          )}
           <li>
             <a href="/dashboard" className="yellow-text nav-text">
               My Photos

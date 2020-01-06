@@ -14,6 +14,9 @@ import HeroAppStore from "../assets/heroAppStore.png";
  * TO-DO - Developer comments
  */
 export default class hero extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   componentDidMount() {
     document.addEventListener("DOMContentLoaded", function() {
       var elems = document.querySelectorAll(".carousel");
@@ -23,7 +26,7 @@ export default class hero extends React.Component {
   render() {
     return (
       <header>
-        <HeaderSection />
+        <HeaderSection isDashboard={this.props.isDashboard} />
         <br />
         <br />
         <div className="container hero-footer">
