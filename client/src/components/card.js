@@ -3,6 +3,7 @@ import "materialize-css/dist/css/materialize.min.css";
 import "../styles/dashboard.scss";
 
 export default function Card(props) {
+  console.log("====================" + props.card);
   console.log(props.card.is_flipped, props.card.is_glued);
   let polaroid = false;
   let glued = false;

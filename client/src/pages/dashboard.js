@@ -19,11 +19,45 @@ class Dashboard extends React.Component {
     filteredPhotoNotes: []
   };
 
-  componentDidMount() {
-    console.log("IN CDM");
-    this.props.getPhotoNote(this.state);
+  async componentDidMount() {
+    await this.props.getPhotoNote(this.state);
+    console.log(
+      "-------------RENDER FUNCTION IN CMD" + this.state.filteredPhotoNotes
+    );
+    console.log("-------------RENDER FUNCTION IN CMD" + this.state.photoNotes);
   }
+  componentDidUpdate(prevProps) {
+    console.log("--------------------prev", prevProps);
+    if (this.props.photoNotes !== prevProps.photoNotes) {
+      this.setState({
+        ...this.state,
+        photoNotes: this.props.photoNotes,
+        filteredPhotoNotes: this.props.filteredPhotoNotes
+      });
+    }
+  }
+
+  selectTabHandler = tab => {
+    this.setState(prevState => {
+      const filteredPhotoNotes = prevState.photoNotes.filter(photoNote => {
+        return photoNote.tab.includes(tab);
+      });
+      if (!(filteredPhotoNotes.length === 0)) {
+        return {
+          selected: tab,
+          filteredPhotoNotes
+        };
+      } else {
+        return {
+          selected: tab,
+          filteredPhotoNotes: this.state.photoNotes
+        };
+      }
+    });
+  };
   render() {
+    console.log("-------------RENDER FUNCTION" + this.props.filteredPhotoNotes);
+    console.log("-------------RENDER FUNCTION" + this.props.photoNotes);
     return (
       <div>
         <Header />
@@ -35,7 +69,7 @@ class Dashboard extends React.Component {
           />
         </div>
         <div className="container cards-container">
-          <Cards cards={this.state.photoNotes} />
+          <Cards cards={this.state.filteredPhotoNotes} />
         </div>
       </div>
     );
@@ -44,6 +78,7 @@ class Dashboard extends React.Component {
 
 const mapStateToProps = state => {
   console.log("++++++++++++++++++++", state.photoNotes);
+  console.log("++++++++++++++++++++", state.filteredPhotoNotes);
   // return {
   //   imageURL: state.imageURL,
   //   message: state.message
@@ -51,7 +86,7 @@ const mapStateToProps = state => {
   return {
     ...state,
     photoNotes: state.photoNotes,
-    filteredPhotoNotes: state.photoNotes
+    filteredPhotoNotes: state.filteredPhotoNotes
   };
 };
 
