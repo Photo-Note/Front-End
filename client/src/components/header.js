@@ -22,7 +22,6 @@ export default class header extends React.Component {
    * Setting up the render for the header
    */
   render() {
-    console.log("****************************", this.props.isDashboard);
     return (
       <div>
         <div className="navbar-fixed">

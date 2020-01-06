@@ -16,7 +16,6 @@ import HeroAppStore from "../assets/heroAppStore.png";
 export default class hero extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props);
   }
   componentDidMount() {
     document.addEventListener("DOMContentLoaded", function() {
@@ -25,7 +24,6 @@ export default class hero extends React.Component {
     });
   }
   render() {
-    console.log("------------HERO SECTION");
     return (
       <header>
         <HeaderSection isDashboard={this.props.isDashboard} />

@@ -7,11 +7,7 @@ export const getPhotoNote = photoNotes => {
   return async (dispatch, getState, { getFirebase, getFirestore }) => {
     const firestore = getFirestore();
     const querySnapShot = await firestore.get({ collection: "pictures" });
-
-    console.log(querySnapShot);
     querySnapShot.forEach(doc => {
-      console.log("----------GET PHOTO NOTE----------------", doc.data());
-      // photoNote = { imageURL: doc.data().imageURL };
       photoNotes.photoNotes.push(doc.data());
     });
     dispatch({ type: GET_PHOTONOTE, payload: photoNotes });
