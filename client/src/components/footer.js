@@ -9,6 +9,12 @@ import twitter from "../assets/twitter.svg";
  * TO-DO - Developer comments
  */
 export default class footer extends React.Component {
+  state = {
+    isNameError: false,
+    isEmailError: false,
+    nameError: "",
+    emailError: ""
+  };
   render() {
     return (
       <div className="footer">
