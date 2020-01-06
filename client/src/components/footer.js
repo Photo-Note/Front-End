@@ -20,46 +20,50 @@ export default class footer extends React.Component {
           </div>
         </div>
         <div id="footerbottom">
-          <div className="row">
-            <form className="col sub s12 l7">
-              <h5 className="subscribe col l4">
+          <div className="footer-contents">
+            <form className="footer-sections">
+              <h5 className="subscribe">
                 Subscribe and See What's Happening at PhotoNote
               </h5>
               <div className="inputs">
-                <div className="row">
-                  <div className="input-field col l10">
-                    <input id="name" type="text" placeholder="name" />
-                  </div>
+                <div className="input-field">
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="name"
+                    className="input-element"
+                  />
                 </div>
-                <div className="row">
-                  <div className="input-field col l10">
-                    <input id="email" type="email" placeholder="email" />
-                  </div>
-                  <button
-                    className="btn waves-effect waves-light col l10"
-                    type="submit"
-                    name="action"
-                  >
-                    Submit
-                  </button>
+
+                <div className="input-field">
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="email"
+                    className="inpute-element"
+                  />
                 </div>
+
+                <button className="btn-submit" type="submit" name="action">
+                  Submit
+                </button>
               </div>
             </form>
-          </div>
-          <div className="bottomnav row">
-            <div className="col s12 m12 l12 center-align">
-              <a href="#" className="bottom">
-                About
-              </a>
-              <a href="#" className="bottom">
-                Contact
-              </a>
-              <a href="#" className="bottom">
-                Privacy
-              </a>
-              <a href="#" className="bottom">
-                Terms
-              </a>
+            <div className="bottomnav row">
+              <div className="col s12 m12 l12 center-align">
+                <a href="#" className="bottom">
+                  About
+                </a>
+                <a href="#" className="bottom">
+                  Contact
+                </a>
+                <a href="#" className="bottom">
+                  Privacy
+                </a>
+                <a href="#" className="bottom">
+                  Terms
+                </a>
+              </div>
             </div>
           </div>
         </div>
