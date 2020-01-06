@@ -21,13 +21,8 @@ class Dashboard extends React.Component {
 
   async componentDidMount() {
     await this.props.getPhotoNote(this.state);
-    console.log(
-      "-------------RENDER FUNCTION IN CMD" + this.state.filteredPhotoNotes
-    );
-    console.log("-------------RENDER FUNCTION IN CMD" + this.state.photoNotes);
   }
   componentDidUpdate(prevProps) {
-    console.log("--------------------prev", prevProps);
     if (this.props.photoNotes !== prevProps.photoNotes) {
       this.setState({
         ...this.state,
@@ -56,8 +51,6 @@ class Dashboard extends React.Component {
     });
   };
   render() {
-    console.log("-------------RENDER FUNCTION" + this.props.filteredPhotoNotes);
-    console.log("-------------RENDER FUNCTION" + this.props.photoNotes);
     return (
       <div>
         <Header />
@@ -77,12 +70,6 @@ class Dashboard extends React.Component {
 }
 
 const mapStateToProps = state => {
-  console.log("++++++++++++++++++++", state.photoNotes);
-  console.log("++++++++++++++++++++", state.filteredPhotoNotes);
-  // return {
-  //   imageURL: state.imageURL,
-  //   message: state.message
-  // };
   return {
     ...state,
     photoNotes: state.photoNotes,
